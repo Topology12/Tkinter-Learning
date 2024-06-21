@@ -3,8 +3,8 @@ import tkinter as tk
 # Grid system
 
 root = tk.Tk()
-
-labelName = tk.Label(root, text="My name is Duong")
+name = input("Nhap ten: ")
+labelName = tk.Label(root, text=name)
 labelName.grid(row=0, column=0)
 
 labelAge = tk.Label(root, text="Im 20 years old")
@@ -18,7 +18,7 @@ def myClick():
     myLabel.grid()
 
 
-myButton = tk.Button(root, text="Click me", padx=50, pady=50, command=myClick,fg="blue", bg="orange")
+myButton = tk.Button(root, text="Click me", padx=50, pady=50, command=myClick, fg="blue", bg="orange")
 myButton.grid(row=0, column=1)
 
 
